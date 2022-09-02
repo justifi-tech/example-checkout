@@ -1,0 +1,8 @@
+{
+  "clientId": "",
+  "clientSecret": "",
+  "appDomain": "http://localhost:4201",
+  "serverDomain": "http://localhost:4200",
+  "apiDomain": "https://api.justifi.ai",
+  "sellerAccountId": ""
+}
