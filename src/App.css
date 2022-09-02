@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #333;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px; }
+
+iframe {
+  border: none;
+  height: 50px;
+  width: 100%; }
+
+.layout-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.layout-sidebar {
+  padding: 36px 24px;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  border-right: 1px solid #ddd;
+}
+
+.checkout-container {
+  background-color: white;
+  border-radius: 4px;
+  max-width: 450px;
+  height: 100%;
+  padding: 12px; }
+
+@media (min-width: 450px) {
+  .checkout-container {
+    margin: 36px auto;
+    padding: 36px;
+    border: 1px solid #ddd; } }
+
+.button,
+.button--full-width {
+  cursor: pointer;
+  height: 50px;
+  font-size: 16px;
+  color: white;
+  padding: 0 24px;
+  background-color: #367ac7;
+  border: none;
+  border-radius: 4px; }
+
+  .button:disabled,
+  .button--full-width:disabled {
+    cursor: default;
+    background-color: #8f8f8f;
+  }
+
+.button--full-width {
+  width: 100%;
+}
+
+section {
+  margin-bottom: 24px; }
+
+/* Form Field */
+.form-field {
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 4px;
+  height: 50px;
+  padding: 0 16px;
+  font-size: 16px; }
+
+.form-field:focus {
+  outline: none; }
+
+.form-field:focus::placeholder {
+  color: black; }
+
+.form-field-error-message {
+  margin-top: 4px;
+  color: #C12727;
+}
+
+/* Payment Form Header  */
+.payment-form-header {
+  margin-bottom: 36px;
+  text-align: center; }
+
+.payment-form-header__amount-label {
+  margin-bottom: 4px;
+  font-size: 14px; }
+
+.payment-form-header__amount {
+  font-size: 36px;
+  margin-bottom: 4px; }
+
+.payment-form-header__description {
+  font-size: 14px; }
+
+/* Grid */
+.grid {
+  margin: -10px; }
+
+.row {
+  display: flex; }
+
+.column {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 1;
+  margin: 10px; }
+
+.col-1 {
+  max-width: calc(100% / 12); }
+
+.col-2 {
+  max-width: calc(100% / 12 * 2); }
+
+.col-3 {
+  max-width: calc(100% / 12 * 3); }
+
+.col-4 {
+  max-width: calc(100% / 12 * 4); }
+
+.col-5 {
+  max-width: calc(100% / 12 * 5); }
+
+.col-6 {
+  max-width: calc(100% / 2); }
