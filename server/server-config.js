@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var sassMiddleware = require('node-sass-middleware');
+var sassMiddleware = require('dart-sass-middleware');
 
 var paymentRouter = require('./payment');
 var app = express();
